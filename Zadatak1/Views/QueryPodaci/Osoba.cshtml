@@ -1,0 +1,50 @@
+﻿@model string
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device‐width" />
+    <title>Osoba</title>
+    <style>
+        label {
+            width: 150px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        button {
+            margin: 5px;
+            border-radius: 10px;
+            background-color: lightgreen;
+            color: black;
+            border: 2px solid black;
+            font-weight: bold;
+        }
+
+            button:hover {
+                background-color: orange;
+                color: floralwhite;
+                border: 2px solid floralwhite;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <label>Unesi ime i prezime:</label>
+            <input type="text" name="ime_prezime" value="" />
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+    <div>
+        <label>@Model</label>
+    </div>
+</body>
+</html>
